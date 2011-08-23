@@ -38,7 +38,7 @@
 	path = bundle/bufexplorer
 	url = git://github.com/vim-scripts/bufexplorer.zip.git
 [submodule "vim-yankring"]
-	path = vim-yankring
+	path = bundle/vim-yankring
 	url = git://github.com/chrismetcalf/vim-yankring.git
 [submodule "bundle/align"]
 	path = bundle/align
