@@ -148,3 +148,6 @@ end
 "
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
+
+" Ruby.vim settings
+imap <S-CR>    <CR><CR>end<Esc>-cc  " shift+enter completes blocks
