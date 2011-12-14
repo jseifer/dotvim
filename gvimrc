@@ -8,7 +8,6 @@ if has("gui_macvim")
 
   map <D-t> :CommandT<CR>
   map <D-b> :CommandTBuffer<CR>
-  map <D-f> :maca toggleFileBrowser:<CR>
   set go-=T
 
   map <D-M-Left> :bp<CR>
