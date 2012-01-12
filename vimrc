@@ -110,6 +110,8 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
+map <Leader>v :YRShow<CR>
+
 " Unimpaired configuration
 " Bubble single lines
 nmap <C-Up> [e
