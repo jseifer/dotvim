@@ -3,10 +3,6 @@ call pathogen#helptags()
 
 let mapleader=";"
 
-" This is for the closehtml files
-autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako,html.erb source ~/.vim/bundle/closetag/plugin/closetag.vim
-
 set nocompatible
 
 set number
@@ -50,10 +46,7 @@ let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>b :BufExplorer<CR>
 " Command-T configuration
-let g:CommandTMaxHeight=20
-
-" ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
+let g:CommandTMaxHeight=14
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
@@ -79,7 +72,7 @@ endfunction
 au FileType make                                     set noexpandtab
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+au BufRead,BufNewFile {Guardfile,Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
