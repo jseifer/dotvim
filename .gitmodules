@@ -1,15 +1,9 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "bundle/delmitmate"]
 	path = bundle/delmitmate
 	url = git://github.com/Raimondi/delimitMate.git
-[submodule "bundle/closetag"]
-	path = bundle/closetag
-	url = git://github.com/docunext/closetag.vim.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -55,3 +49,15 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "bundle/ragtag"]
+	path = bundle/ragtag
+	url = git://github.com/tpope/vim-ragtag.git
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/easybuffer"]
+	path = bundle/easybuffer
+	url = git://github.com/troydm/easybuffer.vim.git

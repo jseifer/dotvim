@@ -1,3 +1,4 @@
+let g:closetag_html_style = 1
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -44,7 +45,9 @@ set noequalalways
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
-map <Leader>b :BufExplorer<CR>
+
+" EasyBuffer
+map <Leader>b :EasyBuffer<CR>
 " Command-T configuration
 let g:CommandTMaxHeight=14
 
@@ -108,7 +111,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color desert
+color molokai
 
 " Directories for swp files
 set backupdir=~/.vim/backup/
@@ -132,3 +135,19 @@ nnoremap <leader>l :TagbarToggle<CR>
 
 " Ruby.vim settings
 imap <S-CR>    <CR><CR>end<Esc>-cc
+
+"unmap <C-P>
+let g:yankring_replace_n_key = ''
+
+"These are moved to vim/after/plugin/mappings.vim
+"map <C-P> <Nop>
+"map <C-P> :CtrlP<CR>
+"map <C-Y> :YRShow<CR>
+
+nnoremap <leader>p :CtrlP<CR>
+
+let g:ragtag_global_maps = 1
+"let g:ctrlp_map = '<c-p>'
+"let g:ctrlp_cmd = 'CtrlP'
+
+
