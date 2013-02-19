@@ -7,9 +7,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/vim-scripts/SuperTab.git
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar.git
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
@@ -49,9 +46,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule "bundle/ragtag"]
-	path = bundle/ragtag
-	url = git://github.com/tpope/vim-ragtag.git
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git

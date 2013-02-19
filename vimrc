@@ -1,4 +1,3 @@
-let g:closetag_html_style = 1
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -48,11 +47,6 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " EasyBuffer
 map <Leader>b :EasyBuffer<CR>
-" Command-T configuration
-let g:CommandTMaxHeight=14
-
-" CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -144,8 +138,6 @@ if filereadable(expand("~/.gvimrc.local"))
 end
 
 "
-let g:tagbar_usearrows = 1
-nnoremap <leader>l :TagbarToggle<CR>
 
 " Ruby.vim settings
 imap <S-CR>    <CR><CR>end<Esc>-cc
@@ -160,8 +152,8 @@ let g:yankring_replace_n_key = ''
 
 nnoremap <leader>p :CtrlP<CR>
 
-let g:ragtag_global_maps = 1
-"let g:ctrlp_map = '<c-p>'
-"let g:ctrlp_cmd = 'CtrlP'
 
+if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal" || $TERM == "xterm-color"
+  set t_Co=256
+endif
 
