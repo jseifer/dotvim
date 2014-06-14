@@ -1,5 +1,22 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'vim-scripts/supertab'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/zoomwin'
+Plugin 'vim-scripts/YankRing.vim'
+Plugin 'tsaleh/vim-align'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'kien/ctrlp.vim'
+Plugin 'troydm/easybuffer.vim'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'scrooloose/syntastic'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'tomasr/molokai'
+
+call vundle#end()
 
  let mapleader=";"
 
@@ -110,7 +127,7 @@ endfunction
 
 " Enable syntastic syntax checking
  let g:syntastic_enable_signs=1
- let g:syntastic_quiet_warnings=1
+ let g:syntastic_quiet_messages = {'level': 'warnings'}
 
  " Use modeline overrides
  set modeline
